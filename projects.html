@@ -5,10 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Projects</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
+/* RESET */
 *{
 margin:0;
 padding:0;
@@ -16,74 +17,82 @@ box-sizing:border-box;
 font-family:'Poppins',sans-serif;
 }
 
+/* BACKGROUND (same theme) */
 body{
-background:linear-gradient(90deg,#041827,#06263d,#041827);
+background: radial-gradient(circle at top left,#0b1220,#050816,#0a0f1f);
 color:white;
 }
 
-/* Sidebar */
+/* SIDEBAR */
 .sidebar{
-position: fixed;
-top: 0;
-left: 0;
-width: 220px;
-height: 100%;
-background:#072540;
+position:fixed;
+top:0;
+left:0;
+width:240px;
+height:100vh;
+background:rgba(10,15,31,0.85);
+backdrop-filter: blur(12px);
+border-right:1px solid rgba(34,211,238,0.2);
 display:flex;
 flex-direction:column;
 padding-top:40px;
 }
 
 .sidebar a{
-padding:15px 25px;
+padding:14px 20px;
 text-decoration:none;
 color:white;
-font-size:18px;
+font-size:16px;
+border-left:3px solid transparent;
 transition:0.3s;
 }
 
 .sidebar a:hover{
-background:#00e5ff;
-color:black;
+background:rgba(34,211,238,0.1);
+border-left:3px solid #22d3ee;
+color:#22d3ee;
 }
 
-/* Main */
+/* MAIN */
 .main{
-margin-left:240px;
+margin-left:260px;
 padding:60px 40px;
 }
 
+/* TITLE */
 h1{
-font-size:50px;
+font-size:45px;
 margin-bottom:30px;
 }
 
 .highlight{
-color:#00e5ff;
+color:#22d3ee;
 }
 
-/* Cards */
+/* GRID */
 .project-container{
 display:grid;
 grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
 gap:25px;
 }
 
+/* CARD */
 .card{
 background:rgba(255,255,255,0.05);
 border-radius:15px;
 overflow:hidden;
-border:1px solid rgba(255,255,255,0.1);
+border:1px solid rgba(34,211,238,0.2);
 transition:0.3s;
+box-shadow:0 0 20px rgba(34,211,238,0.08);
 }
 
 .card:hover{
 transform:translateY(-8px);
-box-shadow:0 0 25px #00e5ff;
-border-color:#00e5ff;
+box-shadow:0 0 25px rgba(34,211,238,0.25);
+border-color:#22d3ee;
 }
 
-/*image */
+/* IMAGE */
 .card img{
 width:100%;
 height:200px;
@@ -91,13 +100,13 @@ object-fit:cover;
 display:block;
 }
 
-/* content */
+/* CONTENT */
 .card-content{
 padding:20px;
 }
 
 .card-content h2{
-color:#00e5ff;
+color:#22d3ee;
 margin-bottom:10px;
 font-size:22px;
 }
@@ -106,6 +115,7 @@ font-size:22px;
 font-size:15px;
 line-height:1.6;
 color:#ddd;
+opacity:0.9;
 }
 
 </style>
@@ -113,7 +123,7 @@ color:#ddd;
 
 <body>
 
-<!-- Sidebar -->
+<!-- SIDEBAR -->
 <div class="sidebar">
 <a href="home.html">Home</a>
 <a href="about.html">About</a>
@@ -123,35 +133,30 @@ color:#ddd;
 <a href="contact.html">Contact</a>
 </div>
 
-<!-- Projects -->
+<!-- MAIN -->
 <div class="main">
 
 <h1>My <span class="highlight">Projects</span></h1>
 
 <div class="project-container">
 
-<!-- Project 1 -->
 <div class="card">
 <img src="image/project1.jpg.png">
 <div class="card-content">
 <h2>SmartHire – AI Interview Platform</h2>
 <p>
 Built an AI-based interview practice platform that simulates technical, coding, and HR interviews.
-It analyzes user answers using NLP and machine learning to evaluate communication and problem-solving skills,
-and gives personalized feedback to improve job readiness.
+It analyzes user answers using NLP and machine learning to give feedback and improve skills.
 </p>
 </div>
 </div>
 
-<!-- Project 2 -->
 <div class="card">
 <img src="image/project2.jpg.png">
 <div class="card-content">
 <h2>AI Medical Assistant</h2>
 <p>
-Developed an AI-based medical assistant that helps users with basic health-related queries by analyzing symptoms
-and providing possible guidance. It uses machine learning to understand user inputs and gives quick, informative
-responses to support initial health decision-making.
+Developed an AI assistant that helps users understand basic health-related queries and symptoms using ML-based response system.
 </p>
 </div>
 </div>
