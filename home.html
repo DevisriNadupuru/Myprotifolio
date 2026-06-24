@@ -9,7 +9,6 @@
 
 <style>
 
-/* RESET */
 *{
 margin:0;
 padding:0;
@@ -20,21 +19,19 @@ font-family:'Poppins',sans-serif;
 body{
 background:linear-gradient(90deg,#041827,#06263d,#041827);
 color:white;
-overflow-x:hidden;
 }
 
-/* SIDEBAR */
+/* Sidebar */
 .sidebar{
-position:fixed;
-top:0;
-left:0;
-width:220px;
-height:100%;
+position: fixed;
+top: 0;
+left: 0;
+width: 220px;
+height: 100%;
 background:#072540;
 display:flex;
 flex-direction:column;
 padding-top:40px;
-z-index:1000;
 }
 
 .sidebar a{
@@ -50,17 +47,16 @@ background:#00e5ff;
 color:black;
 }
 
-/* HERO */
+/* Hero */
 .hero{
 height:100vh;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:0 60px;
-margin-left:220px;
+padding:0 8%;
+margin-left:240px;
 }
 
-/* TEXT */
 .text{
 max-width:600px;
 }
@@ -80,17 +76,17 @@ font-size:35px;
 margin-bottom:20px;
 }
 
+.highlight{
+color:#00e5ff;
+}
+
 .text p{
 font-size:18px;
 line-height:1.8;
 margin-bottom:30px;
 }
 
-.highlight{
-color:#00e5ff;
-}
-
-/* BUTTONS */
+/* Buttons (only resume now) */
 .hero-buttons{
 display:flex;
 gap:20px;
@@ -98,6 +94,7 @@ align-items:center;
 margin-top:20px;
 }
 
+/* Resume button style */
 .btn{
 display:inline-block;
 padding:15px 35px;
@@ -114,6 +111,7 @@ transition:0.3s;
 transform:scale(1.05);
 }
 
+/* Resume button style */
 .resume-btn{
 background:transparent;
 border:2px solid #00e5ff;
@@ -124,16 +122,18 @@ box-shadow:none;
 .resume-btn:hover{
 background:#00e5ff;
 color:black;
+box-shadow:0 0 20px #00e5ff;
 }
 
-/* IMAGE */
+/* Image */
 .image img{
 width:420px;
 height:420px;
 border-radius:50%;
 object-fit:cover;
 border:6px solid #00e5ff;
-box-shadow:0 0 20px #00e5ff,
+box-shadow:
+0 0 20px #00e5ff,
 0 0 40px #00e5ff,
 0 0 70px #c84dff,
 0 0 100px #c84dff;
@@ -144,9 +144,9 @@ box-shadow:0 0 20px #00e5ff,
 
 <body>
 
-<!-- SIDEBAR -->
+<!-- Sidebar -->
 <div class="sidebar">
-<a href="index.html">Home</a>
+<a href="home.html">Home</a>
 <a href="about.html">About</a>
 <a href="skills.html">Skills</a>
 <a href="projects.html">Projects</a>
@@ -154,10 +154,11 @@ box-shadow:0 0 20px #00e5ff,
 <a href="contact.html">Contact</a>
 </div>
 
-<!-- HERO -->
+<!-- Hero Section -->
 <section class="hero">
 
 <div class="text">
+
 <h3>Hello, It's Me</h3>
 <h1>Devi Sri</h1>
 
@@ -167,14 +168,15 @@ box-shadow:0 0 20px #00e5ff,
 Aspiring Software Developer & AI Enthusiast passionate about Web Development, AI and innovative software solutions.
 </p>
 
+<!-- Only Resume Button -->
 <div class="hero-buttons">
-<a href="image/myresume.png" target="_blank" class="btn resume-btn">View Resume</a>
+<a href="image/myresume.png.png" target="_blank" class="btn resume-btn">View Resume</a>
 </div>
 
 </div>
 
 <div class="image">
-<img src="image/profile.jpg.jpeg" alt="profile">
+<img src="image/profile.jpg.jpeg">
 </div>
 
 </section>
