@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(90deg,#041827,#06263d,#041827);
+color:white;
+}
+
+/* Sidebar */
+.sidebar{
+position: fixed;
+top: 0;
+left: 0;
+width: 220px;
+height: 100%;
+background:#072540;
+display:flex;
+flex-direction:column;
+padding-top:40px;
+}
+
+.sidebar a{
+padding:15px 25px;
+text-decoration:none;
+color:white;
+font-size:18px;
+transition:0.3s;
+}
+
+.sidebar a:hover{
+background:#00e5ff;
+color:black;
+}
+
+/* Main */
+.main{
+margin-left:240px;
+padding:60px 40px;
+}
+
+h1{
+font-size:50px;
+margin-bottom:30px;
+}
+
+.highlight{
+color:#00e5ff;
+}
+
+/* Section title */
+h2{
+margin-top:30px;
+margin-bottom:15px;
+color:#00e5ff;
+}
+
+/* Skill item */
+.skill{
+margin-bottom:20px;
+}
+
+.skill-name{
+font-size:18px;
+margin-bottom:8px;
+}
+
+/* Bar */
+.bar{
+width:100%;
+background:rgba(255,255,255,0.1);
+height:10px;
+border-radius:20px;
+overflow:hidden;
+}
+
+.progress{
+height:10px;
+background:#00e5ff;
+border-radius:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+<a href="home.html">Home</a>
+<a href="about.html">About</a>
+<a href="skills.html">Skills</a>
+<a href="projects.html">Projects</a>
+<a href="certificates.html">Certificates</a>
+<a href="contact.html">Contact</a>
+</div>
+
+<!-- Skills -->
+<div class="main">
+
+<h1>My <span class="highlight">Skills</span></h1>
+
+<!-- Frontend -->
+<h2>Frontend Development</h2>
+
+<div class="skill">
+<div class="skill-name">HTML</div>
+<div class="bar"><div class="progress" style="width:95%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">CSS</div>
+<div class="bar"><div class="progress" style="width:90%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">JavaScript</div>
+<div class="bar"><div class="progress" style="width:75%"></div></div>
+</div>
+
+<!-- Backend -->
+<h2>Programming</h2>
+
+<div class="skill">
+<div class="skill-name">Python</div>
+<div class="bar"><div class="progress" style="width:85%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">Java</div>
+<div class="bar"><div class="progress" style="width:70%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">C</div>
+<div class="bar"><div class="progress" style="width:80%"></div></div>
+</div>
+
+<!-- Tools -->
+<h2>Tools</h2>
+
+<div class="skill">
+<div class="skill-name">Git & GitHub</div>
+<div class="bar"><div class="progress" style="width:75%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">SQL</div>
+<div class="bar"><div class="progress" style="width:70%"></div></div>
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Devi Sri Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(90deg,#041827,#06263d,#041827);
+color:white;
+}
+
+/* Sidebar */
+.sidebar{
+position: fixed;
+top: 0;
+left: 0;
+width: 220px;
+height: 100%;
+background:#072540;
+display:flex;
+flex-direction:column;
+padding-top:40px;
+}
+
+.sidebar a{
+padding:15px 25px;
+text-decoration:none;
+color:white;
+font-size:18px;
+transition:0.3s;
+}
+
+.sidebar a:hover{
+background:#00e5ff;
+color:black;
+}
+
+/* Hero */
+.hero{
+height:100vh;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 8%;
+margin-left:240px;
+}
+
+.text{
+max-width:600px;
+}
+
+.text h3{
+font-size:28px;
+margin-bottom:10px;
+}
+
+.text h1{
+font-size:70px;
+margin-bottom:10px;
+}
+
+.text h2{
+font-size:35px;
+margin-bottom:20px;
+}
+
+.highlight{
+color:#00e5ff;
+}
+
+.text p{
+font-size:18px;
+line-height:1.8;
+margin-bottom:30px;
+}
+
+/* Buttons (only resume now) */
+.hero-buttons{
+display:flex;
+gap:20px;
+align-items:center;
+margin-top:20px;
+}
+
+/* Resume button style */
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#00e5ff;
+color:black;
+text-decoration:none;
+border-radius:40px;
+font-weight:bold;
+box-shadow:0 0 20px #00e5ff;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+/* Resume button style */
+.resume-btn{
+background:transparent;
+border:2px solid #00e5ff;
+color:#00e5ff;
+box-shadow:none;
+}
+
+.resume-btn:hover{
+background:#00e5ff;
+color:black;
+box-shadow:0 0 20px #00e5ff;
+}
+
+/* Image */
+.image img{
+width:420px;
+height:420px;
+border-radius:50%;
+object-fit:cover;
+border:6px solid #00e5ff;
+box-shadow:
+0 0 20px #00e5ff,
+0 0 40px #00e5ff,
+0 0 70px #c84dff,
+0 0 100px #c84dff;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+<a href="home.html">Home</a>
+<a href="about.html">About</a>
+<a href="skills.html">Skills</a>
+<a href="projects.html">Projects</a>
+<a href="certificates.html">Certificates</a>
+<a href="contact.html">Contact</a>
+</div>
+
+<!-- Hero Section -->
+<section class="hero">
+
+<div class="text">
+
+<h3>Hello, It's Me</h3>
+<h1>Devi Sri</h1>
+
+<h2>And I'm a <span class="highlight">Software Developer</span></h2>
+
+<p>
+Aspiring Software Developer & AI Enthusiast passionate about Web Development, AI and innovative software solutions.
+</p>
+
+<!-- Only Resume Button -->
+<div class="hero-buttons">
+<a href="image/myresume.png.png" target="_blank" class="btn resume-btn">View Resume</a>
+</div>
+
+</div>
+
+<div class="image">
+<img src="image/profile.jpg.jpeg">
+</div>
+
+</section>
+
+</body>
+</html>

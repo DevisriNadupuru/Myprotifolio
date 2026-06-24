@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Certificates</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+/* BACKGROUND */
+body{
+background:linear-gradient(90deg,#041827,#06263d,#041827);
+color:white;
+}
+
+/* SIDEBAR */
+.sidebar{
+position:fixed;
+top:0;
+left:0;
+width:220px;
+height:100%;
+background:#072540;
+display:flex;
+flex-direction:column;
+padding-top:40px;
+}
+
+.sidebar a{
+padding:15px 25px;
+text-decoration:none;
+color:white;
+font-size:18px;
+transition:0.3s;
+}
+
+.sidebar a:hover{
+background:#00e5ff;
+color:black;
+}
+
+/* MAIN */
+.main{
+margin-left:240px;
+padding:60px 40px;
+}
+
+/* TITLE */
+h1{
+font-size:45px;
+margin-bottom:10px;
+}
+
+.highlight{
+color:#00e5ff;
+}
+
+.subtitle{
+color:#aaa;
+margin-bottom:40px;
+}
+
+/* GRID */
+.cert-container{
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+gap:25px;
+}
+
+/* CARD */
+.cert-card{
+background:rgba(255,255,255,0.05);
+border-radius:16px;
+padding:20px;
+border:1px solid rgba(255,255,255,0.1);
+transition:0.3s;
+}
+
+.cert-card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px #00e5ff;
+border-color:#00e5ff;
+}
+
+/* TEXT */
+.cert-card h2{
+color:#00e5ff;
+font-size:20px;
+margin-bottom:10px;
+}
+
+.cert-card p{
+color:#ddd;
+font-size:14px;
+line-height:1.6;
+margin-bottom:0;
+}
+
+/* VIEW BUTTON ONLY */
+.btns a{
+display:inline-block;
+padding:8px 14px;
+background:#00e5ff;
+color:black;
+text-decoration:none;
+border-radius:6px;
+font-size:13px;
+font-weight:600;
+transition:0.3s;
+margin-top:10px;
+}
+
+.btns a:hover{
+background:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+<a href="home.html">Home</a>
+<a href="about.html">About</a>
+<a href="skills.html">Skills</a>
+<a href="projects.html">Projects</a>
+<a href="certificates.html">Certificates</a>
+<a href="contact.html">Contact</a>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+<h1>My <span class="highlight">Certificates</span></h1>
+<p class="subtitle">AI, Cloud & NLP certifications showcasing my skills</p>
+
+<div class="cert-container">
+
+<!-- 1 -->
+<div class="cert-card">
+<h2>Google Cloud Generative AI</h2>
+<p>Completed Google Cloud AI course focusing on generative AI models and cloud tools.</p>
+<div class="btns">
+<a href="image/google-ai.jpg.pdf" target="_blank">View Certificate</a>
+</div>
+</div>
+
+<!-- 2 -->
+<div class="cert-card">
+<h2>NPTEL - Natural Language Processing</h2>
+<p>IIT Kharagpur NLP course covering text processing and language models.</p>
+<div class="btns">
+<a href="image/nptel-nlp.jpg.pdf" target="_blank">View Certificate</a>
+</div>
+</div>
+
+<!-- 3 -->
+<div class="cert-card">
+<h2>Prompt Engineering for AI</h2>
+<p>Learned prompt design techniques for AI and LLM applications.</p>
+<div class="btns">
+<a href="image/prompt-ai.jpg.pdf" target="_blank">View Certificate</a>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
