@@ -5,10 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About Me</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
+/* RESET */
 *{
 margin:0;
 padding:0;
@@ -16,74 +17,135 @@ box-sizing:border-box;
 font-family:'Poppins',sans-serif;
 }
 
+/* BACKGROUND */
 body{
-background:linear-gradient(90deg,#041827,#06263d,#041827);
+background: radial-gradient(circle at top left,#0b1220,#050816,#0a0f1f);
 color:white;
 }
 
-/* Sidebar */
+/* SIDEBAR */
 .sidebar{
-position: fixed;
-top: 0;
-left: 0;
-width: 220px;
-height: 100%;
-background:#072540;
+position:fixed;
+top:0;
+left:0;
+width:240px;
+height:100vh;
+background:rgba(10,15,31,0.85);
+backdrop-filter: blur(12px);
+border-right:1px solid rgba(34,211,238,0.2);
 display:flex;
 flex-direction:column;
 padding-top:40px;
 }
 
 .sidebar a{
-padding:15px 25px;
+padding:14px 20px;
 text-decoration:none;
 color:white;
-font-size:18px;
+font-size:16px;
+border-left:3px solid transparent;
 transition:0.3s;
 }
 
 .sidebar a:hover{
-background:#00e5ff;
-color:black;
+background:rgba(34,211,238,0.1);
+border-left:3px solid #22d3ee;
+color:#22d3ee;
 }
 
-/* Main content */
+/* MAIN */
 .main{
-margin-left:240px;
+margin-left:260px;
 padding:60px 40px;
 }
 
-/* Heading */
+/* TITLE */
 h1{
-font-size:50px;
+font-size:45px;
 margin-bottom:20px;
-}
-
-h2{
-margin-top:25px;
-margin-bottom:10px;
-color:#00e5ff;
 }
 
 .highlight{
-color:#00e5ff;
+color:#22d3ee;
 }
 
-/* Text */
-p{
-font-size:18px;
+/* CARD */
+.card{
+background:rgba(255,255,255,0.05);
+padding:25px;
+border-radius:15px;
+border:1px solid rgba(34,211,238,0.2);
+margin-bottom:25px;
+box-shadow:0 0 20px rgba(34,211,238,0.1);
+}
+
+.card p{
+font-size:16px;
 line-height:1.8;
-margin-bottom:20px;
+opacity:0.85;
 }
 
-ul{
-margin-left:20px;
-line-height:1.9;
-font-size:18px;
-}
-
-li{
+/* SECTION TITLE */
+h2{
+margin-top:30px;
 margin-bottom:15px;
+color:#22d3ee;
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+/* BOX */
+.box{
+background:rgba(255,255,255,0.05);
+padding:20px;
+border-radius:15px;
+border:1px solid rgba(34,211,238,0.2);
+transition:0.3s;
+}
+
+.box:hover{
+transform:translateY(-5px);
+box-shadow:0 0 20px rgba(34,211,238,0.2);
+}
+
+.box h3{
+color:#22d3ee;
+margin-bottom:10px;
+}
+
+/* TAGS */
+.tags{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.tags span{
+padding:8px 12px;
+border-radius:20px;
+background:rgba(34,211,238,0.1);
+border:1px solid #22d3ee;
+font-size:13px;
+color:#22d3ee;
+transition:0.3s;
+}
+
+.tags span:hover{
+background:#22d3ee;
+color:black;
+}
+
+/* OBJECTIVE */
+.objective{
+background:linear-gradient(90deg,rgba(34,211,238,0.1),rgba(168,85,247,0.1));
+padding:20px;
+border-radius:15px;
+border:1px solid rgba(34,211,238,0.3);
 }
 
 </style>
@@ -91,7 +153,7 @@ margin-bottom:15px;
 
 <body>
 
-<!-- Sidebar -->
+<!-- SIDEBAR -->
 <div class="sidebar">
 <a href="home.html">Home</a>
 <a href="about.html">About</a>
@@ -101,35 +163,74 @@ margin-bottom:15px;
 <a href="contact.html">Contact</a>
 </div>
 
-<!-- About Content -->
+<!-- MAIN -->
 <div class="main">
 
 <h1>About <span class="highlight">Me</span></h1>
 
-<h2>Education</h2>
+<!-- PROFILE SUMMARY -->
+<div class="card">
+<p>
+I am <b>Devi Sri</b>, an aspiring Software Developer and Computer Science student passionate about building modern, responsive and user-friendly web applications. I enjoy solving real-world problems and continuously improving my development skills.
+</p>
+</div>
 
-<ul>
-<li>
-<b>Bachelor of Technology in Computer Science and Systems Engineering</b><br>
-Lendi Institute of Engineering and Technology<br>
-2023 - 2027<br>
-CGPA: 8.3
-</li>
+<!-- WHAT I DO -->
+<h2>What I Do</h2>
 
-<li>
-<b>Intermediate (MPC)</b><br>
-Srinivasa Junior College, Vizianagaram<br>
-2021 - 2023<br>
-CGPA: 8.8
-</li>
+<div class="grid">
 
-<li>
-<b>SSC 10th</b><br>
-KGBV, Gajapathinagaram<br>
-2020 - 2021<br>
-CGPA: 9.8
-</li>
-</ul>
+<div class="box">
+<h3>Web Development</h3>
+<p>Responsive and modern websites using HTML, CSS, JavaScript.</p>
+</div>
+
+<div class="box">
+<h3>UI Design</h3>
+<p>Clean and user-friendly interface designs with better UX.</p>
+</div>
+
+<div class="box">
+<h3>Problem Solving</h3>
+<p>Logical thinking and coding practice for real-world problems.</p>
+</div>
+
+<div class="box">
+<h3>Learning Tech</h3>
+<p>Exploring Cloud, AI and new technologies daily.</p>
+</div>
+
+</div>
+
+<!-- EDUCATION -->
+<h2>Education Journey</h2>
+
+<div class="card">
+<p>
+<b>B.Tech - CSE</b> → Lendi Institute of Engineering and Technology (2023 - 2027) | CGPA: 8.3<br><br>
+<b>Intermediate (MPC)</b> → Srinivasa Junior College (2021 - 2023) | CGPA: 8.8<br><br>
+<b>SSC</b> → KGBV School (2020 - 2021) | CGPA: 9.8
+</p>
+</div>
+
+<!-- ACHIEVEMENTS -->
+<h2>Achievements</h2>
+
+<div class="tags">
+<span>5+ Projects Completed</span>
+<span>3+ Certificates</span>
+<span>Frontend Developer Focus</span>
+<span>Strong Academic Performance</span>
+</div>
+
+<!-- CAREER OBJECTIVE -->
+<h2>Career Objective</h2>
+
+<div class="objective">
+<p>
+To secure a Software Developer role where I can apply my skills, learn from real-world projects and contribute to innovative solutions while growing professionally.
+</p>
+</div>
 
 </div>
 
